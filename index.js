@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const semver = require('semver');
 const path = require('path');
 const fs = require('fs');
@@ -11,22 +13,22 @@ if (engines && engines.node) {
   const version = engines.node;
   if (!semver.satisfies(process.version, version)) {
     console.log(`
-  >  Node version requirements '${version}' are NOT satisfied with current version ${process.version}.
-     Please update your node version and try again.
+> Node version requirements '${version}' are NOT satisfied with current version ${process.version}.
+  Please update your node version and try again.
     `);
     process.exit(1);
   } else {
     console.log(`
-  >  Node version requirements '${version}' are satisfied by the current version: ${process.version};
+> Node version requirements '${version}' are satisfied by the current version: ${process.version};
     `);
     process.exit(0);
   }
 } else {
   console.log(`
-  >  Node ${process.version} is currently installed.
-     You have no desired versions specified in your package.json.
-     Please add "{ engines: { node: '<semver expression>' } }" to your package.json and try again.
+> Node ${process.version} is currently installed.
+ You have no desired versions specified in your package.json.
+ Please add "{ engines: { node: '<semver expression>' } }" to your package.json and try again.
 
-     See https://docs.npmjs.com/files/package.json#engines
+ See https://docs.npmjs.com/files/package.json#engines
   `);
 }
