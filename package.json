@@ -1,0 +1,34 @@
+{
+  "name": "engine-preflight",
+  "version": "1.0.0",
+  "description": "Verify that your node app can run on the currently installed version of node running on your system.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unimaginativeGitHub/engine-preflight.git"
+  },
+  "keywords": [
+    "engine",
+    "node",
+    "version",
+    "install"
+  ],
+  "author": "Bradley D. Cooper",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/unimaginativeGitHub/engine-preflight/issues"
+  },
+  "homepage": "https://github.com/unimaginativeGitHub/engine-preflight#readme",
+  "dependencies": {
+    "semver": "6.3.0"
+  },
+  "bin": {
+    "check-engine": "./index.js"
+  },
+  "engines": {
+    "node": ">=10"
+  }
+}
