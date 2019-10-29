@@ -27,8 +27,5 @@
   },
   "bin": {
     "check-engine": "./index.js"
-  },
-  "engines": {
-    "node": ">=10"
   }
 }
