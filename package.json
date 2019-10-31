@@ -1,10 +1,10 @@
 {
   "name": "engine-preflight",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Verify that your node app can run on the currently installed version of node running on your system.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "node-version-check": "node ./index.js --removeModules"
   },
   "repository": {
     "type": "git",
@@ -23,9 +23,7 @@
   },
   "homepage": "https://github.com/unimaginativeGitHub/engine-preflight#readme",
   "dependencies": {
+    "commander": "3.0.2",
     "semver": "6.3.0"
-  },
-  "bin": {
-    "check-engine": "./index.js"
   }
 }
