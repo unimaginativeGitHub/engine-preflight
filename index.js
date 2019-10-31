@@ -6,7 +6,7 @@ const semver = require('semver');
 const path = require('path');
 const fs = require('fs');
 
-const { removeModules } = program
+const { removeModules = false } = program
   .option('--removeModules', 'Remove node modules if version does not meet requirements.')
   .parse(process.argv);
 
