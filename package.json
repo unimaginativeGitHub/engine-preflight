@@ -24,7 +24,7 @@
   "homepage": "https://github.com/unimaginativeGitHub/engine-preflight#readme",
   "dependencies": {
     "commander": "3.0.2",
-    "semver": "6.3.0"
+    "semver": "6.3.1"
   },
   "bin": {
     "check-engine": "./index.js"
