@@ -1,10 +1,11 @@
 #!/usr/bin/env node
 
 const childProcess = require('child_process');
-const program = require('commander');
-const semver = require('semver');
 const path = require('path');
 const fs = require('fs');
+
+const program = require('commander');
+const semver = require('semver');
 
 const { removeModules = false } = program
   .option('--removeModules', 'Remove node modules if version does not meet requirements.')
